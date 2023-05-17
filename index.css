@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
+  line-height: 20pt;
+}
+
+body {
+  height:  97vh;
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  padding: 78px;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.info {
+  width: 700px;
+}
+
+.character-interaction {
+  margin-top: auto;
+  display: flex;
+  padding-right: 52px;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  width: fit-content;
+  min-width: 100px;
+  margin-left: 32px;
+  margin-bottom: 32px;
+  padding: 24px 32px;
+  color: #300030;
+  background-image: url('./img/name.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#user-choice {
+  display: flex;
+  margin: auto;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+#user-choice > button {
+  background-color: transparent;
+  border: none;
+  transition: ease-in-out 200ms;
+}
+
+#user-choice > button > img{
+  width: 98px;
+}
+
+button img:hover {
+  transition: all 50ms;
+  scale: 1.5;
+  filter: drop-shadow(
+    0 0 10px hsl(0, 0%, 10%) 
+  );
+    
+}
+
+.dialogue-container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 52px;
+  justify-content: center;
+  margin-right: -150px;
+  margin-top: -50px;
+}
+
+.dialogue-container > img {
+  width: 220px;
+  height: 220px;
+  
+}
+
+.frame {
+  width: fit-content;
+  padding: 24px 48px;
+  background-image: url('./img/frame.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
